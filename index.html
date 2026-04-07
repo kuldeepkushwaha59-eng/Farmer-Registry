@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Farmer Registry | किसान रजिस्ट्री – भारत सरकार सूचना पोर्टल</title>
+    <meta name="description" content="Farmer Registry (किसान रजिस्ट्री) – AgriStack डिजिटल किसान पहचान। जानिए लाभ, प्रक्रिया, राज्यवार रजिस्ट्री लिंक। सरकारी योजनाओं की पूरी जानकारी हिंदी में।">
+    <meta name="keywords" content="Farmer Registry, किसान रजिस्ट्री, AgriStack, PM Kisan, कृषि योजनाएं, Kisan Registration, भारत सरकार">
+    <meta name="author" content="Farmer Registry – सूचनात्मक पोर्टल">
+    <meta name="robots" content="index, follow">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+            background: #f0f4f0;
+            color: #1a2a1a;
+            line-height: 1.6;
+        }
+
+        /* Tricolor Top Bar */
+        .tricolor {
+            height: 6px;
+            background: linear-gradient(90deg, #ff9933 0%, #ff9933 33%, #ffffff 33%, #ffffff 66%, #138808 66%, #138808 100%);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .site-header {
+            background: #ffffff;
+            border-bottom: 2px solid #2c6e2c;
+            padding: 16px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .emblem {
+            font-size: 45px;
+        }
+        .logo-text h1 {
+            font-size: 1.5rem;
+            color: #1a4d2a;
+        }
+        .logo-text p {
+            font-size: 0.7rem;
+            color: #c17b3c;
+            letter-spacing: 1px;
+        }
+        .gov-badge {
+            background: #1a4d2a;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background: #1a4d2a;
+            margin: 0;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            list-style: none;
+            padding: 12px 0;
+            flex-wrap: wrap;
+        }
+        .nav-inner a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 12px;
+            transition: 0.2s;
+        }
+        .nav-inner a:hover {
+            color: #e6b422;
+            border-bottom: 2px solid #e6b422;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a3b2a 0%, #1a5e3a 50%, #2e7d32 100%);
+            padding: 60px 0 50px;
+            text-align: center;
+            color: white;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(230,180,66,0.25);
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            backdrop-filter: blur(4px);
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            opacity: 0.9;
+        }
+        .search-box {
+            display: flex;
+            max-width: 550px;
+            margin: 0 auto;
+            gap: 10px;
+            background: white;
+            border-radius: 60px;
+            padding: 5px;
+        }
+        .search-box input {
+            flex: 1;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 60px;
+            font-size: 1rem;
+            background: transparent;
+        }
+        .search-box button {
+            background: #e6b422;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .search-box button:hover {
+            background: #c49f1a;
+            transform: scale(1.02);
+        }
+
+        /* Official Notice */
+        .official-notice {
+            background: #fef7e0;
+            border-left: 5px solid #e6b422;
+            padding: 16px 24px;
+            margin: 30px auto 0;
+            border-radius: 12px;
+            max-width: 800px;
+            font-size: 0.9rem;
+            color: #5a4a2a;
+        }
+
+        /* Section Common */
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #1a4d2a;
+            margin-bottom: 10px;
+        }
+        .section-sub {
+            text-align: center;
+            color: #5a6e4a;
+            margin-bottom: 40px;
+        }
+
+        /* Category Cards */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+        }
+        .category-card {
+            background: white;
+            padding: 25px 15px;
+            text-align: center;
+            border-radius: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+            border: 1px solid #e0e6d8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .category-card:hover {
+            transform: translateY(-6px);
+            border-color: #e6b422;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+        .category-card i {
+            font-size: 2.2rem;
+            color: #e6b422;
+            margin-bottom: 12px;
+        }
+        .category-card h3 {
+            font-size: 1rem;
+            color: #1a4d2a;
+        }
+
+        /* State Grid */
+        .state-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .state-link {
+            background: white;
+            padding: 12px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #2a5e2a;
+            border: 1px solid #caddc2;
+            text-align: center;
+            font-weight: 500;
+            transition: 0.2s;
+            display: block;
+        }
+        .state-link:hover {
+            background: #1a4d2a;
+            color: white;
+            border-color: #1a4d2a;
+        }
+
+        /* Post Grid */
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .post-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+        }
+        .post-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        .post-content {
+            padding: 20px;
+        }
+        .post-cat {
+            display: inline-block;
+            background: #e6b42220;
+            color: #b87c1a;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            margin-bottom: 10px;
+        }
+        .post-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #1a4d2a;
+        }
+        .read-more {
+            color: #e6b422;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Stats */
+        .stats {
+            background: linear-gradient(135deg, #1a4d2a, #2e7d32);
+            color: white;
+            padding: 50px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        .stat-item h3 {
+            font-size: 2rem;
+            color: #e6b422;
+            margin-bottom: 5px;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            background: #fffaf0;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .newsletter h3 {
+            font-size: 1.6rem;
+            color: #1a4d2a;
+            margin-bottom: 15px;
+        }
+        .news-form {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .news-form input {
+            padding: 12px 20px;
+            width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+        }
+        .news-form button {
+            background: #e6b422;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a2a1f;
+            color: #ccc;
+            padding: 45px 0 25px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        .footer-col h4 {
+            color: #e6b422;
+            margin-bottom: 15px;
+        }
+        .footer-col a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+        .footer-col a:hover {
+            color: #e6b422;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #2f4a2f;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.6rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .state-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="tricolor"></div>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="emblem">🇮🇳</div>
+            <div class="logo-text">
+                <h1>Farmer Registry</h1>
+                <p>भारत सरकार – किसान रजिस्ट्री | AgriStack सूचना पोर्टल</p>
+            </div>
+        </div>
+        <div class="gov-badge">
+            <i class="fas fa-id-card"></i> डिजिटल किसान पहचान
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-inner">
+            <li><a href="#">🏠 होम</a></li>
+            <li><a href="#">📋 फार्मर रजिस्ट्री</a></li>
+            <li><a href="#">🗺️ राज्यवार लिंक</a></li>
+            <li><a href="#">📢 सरकारी योजनाएं</a></li>
+            <li><a href="#">ℹ️ सूचना / हेल्पलाइन</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge">
+            <i class="fas fa-seedling"></i> भारत सरकार – कृषि एवं किसान कल्याण विभाग
+        </div>
+        <h2>Farmer Registry (किसान रजिस्ट्री)<br>अब हर किसान के लिए अनिवार्य</h2>
+        <p>प्रधानमंत्री किसान सम्मान निधि, फसल बीमा, किसान क्रेडिट कार्ड और सभी कृषि योजनाओं का लाभ पाने के लिए Farmer Registry अनिवार्य है।</p>
+        <div class="search-box">
+            <input type="text" placeholder="जानकारी खोजें... (PM Kisan, रजिस्ट्री, योजनाएं)">
+            <button><i class="fas fa-search"></i> खोजें</button>
+        </div>
+        <div class="official-notice">
+            <strong>📢 सरकारी सूचना:</strong> यह एक सूचनात्मक एवं जनजागरूकता पोर्टल है। आपकी कोई व्यक्तिगत जानकारी यहाँ एकत्र नहीं की जाती। रजिस्ट्री हमेशा राज्य कृषि विभाग या सीएससी केंद्र से करें।
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">जानकारी के प्रमुख विषय</h2>
+        <p class="section-sub">अपनी रुचि का विषय चुनें और विस्तार से पढ़ें</p>
+        <div class="category-grid">
+            <div class="category-card"><i class="fas fa-id-card"></i><h3>फार्मर रजिस्ट्री</h3></div>
+            <div class="category-card"><i class="fas fa-rupee-sign"></i><h3>PM Kisan योजना</h3></div>
+            <div class="category-card"><i class="fas fa-tractor"></i><h3>कृषि योजनाएं</h3></div>
+            <div class="category-card"><i class="fas fa-chart-line"></i><h3>मंडी भाव</h3></div>
+            <div class="category-card"><i class="fas fa-map-marker-alt"></i><h3>राज्यवार रजिस्ट्री</h3></div>
+            <div class="category-card"><i class="fas fa-graduation-cap"></i><h3>किसान प्रशिक्षण</h3></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: #f5f0e8;">
+    <div class="container">
+        <h2 class="section-title">🔥 महत्वपूर्ण जानकारी</h2>
+        <p class="section-sub">किसानों के लिए नवीनतम अपडेट और सरकारी योजनाएं</p>
+        <div class="post-grid">
+            <div class="post-card">
+                <div class="post-img" style="background-image: url('https://images.pexels.com/photos/8471354/pexels-photo-8471354.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+                <div class="post-content">
+                    <span class="post-cat">फार्मर रजिस्ट्री</span>
+                    <h3>फार्मर रजिस्ट्री क्या है? जानिए पूरी प्रक्रिया</h3>
+                    <a href="#" class="read-more">पूरा पढ़ें →</a>
+                </div>
+            </div>
+            <div class="post-card">
+                <div class="post-img" style="background-image: url('https://images.pexels.com/photos/6503162/pexels-photo-6503162.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+                <div class="post-content">
+                    <span class="post-cat">PM Kisan</span>
+                    <h3>PM Kisan 19वीं किस्त कब आएगी? देखें स्टेटस</h3>
+                    <a href="#" class="read-more">पूरा पढ़ें →</a>
+                </div>
+            </div>
+            <div class="post-card">
+                <div class="post-img" style="background-image: url('https://images.pexels.com/photos/6210978/pexels-photo-6210978.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop');"></div>
+                <div class="post-content">
+                    <span class="post-cat">AgriStack</span>
+                    <h3>AgriStack: डिजिटल किसान पहचान कैसे बनाएं?</h3>
+                    <a href="#" class="read-more">पूरा पढ़ें →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">राज्यवार फार्मर रजिस्ट्री लिंक</h2>
+        <p class="section-sub">अपने राज्य के आधिकारिक पोर्टल से रजिस्ट्री करें</p>
+        <div class="state-grid">
+            <a href="#" class="state-link">उत्तर प्रदेश (AgriDarshan)</a>
+            <a href="#" class="state-link">मध्य प्रदेश (MP Kisan)</a>
+            <a href="#" class="state-link">महाराष्ट्र (Maha Farmer)</a>
+            <a href="#" class="state-link">बिहार (Bihar Kisan)</a>
+            <a href="#" class="state-link">राजस्थान (e-Mitra)</a>
+            <a href="#" class="state-link">पंजाब (Punjab Registry)</a>
+            <a href="#" class="state-link">हरियाणा (Haryana Kisan)</a>
+            <a href="#" class="state-link">गुजरात (I-Khedut)</a>
+            <a href="#" class="state-link">तमिलनाडु (TN e-Farmer)</a>
+            <a href="#" class="state-link">पश्चिम बंगाल (WB Kisan)</a>
+        </div>
+        <div class="official-notice" style="margin-top: 20px;">
+            📌 <strong>महत्वपूर्ण:</strong> फार्मर रजिस्ट्री पूरी तरह निःशुल्क है। कोई भी व्यक्ति आपसे पैसे मांगे तो तुरंत टोल फ्री नंबर <strong>1800-180-1551</strong> पर शिकायत करें।
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item"><h3>500+</h3><p>उपयोगी लेख</p></div>
+            <div class="stat-item"><h3>50,000+</h3><p>मासिक पाठक</p></div>
+            <div class="stat-item"><h3>100+</h3><p>सरकारी योजनाएं</p></div>
+            <div class="stat-item"><h3>24/7</h3><p>मुफ्त जानकारी</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="container">
+        <h3><i class="fas fa-envelope"></i> किसान योजनाओं की ताज़ा जानकारी पाएं</h3>
+        <p>हर नई योजना, रजिस्ट्री अपडेट और सरकारी सूचनाएं सीधे अपने ईमेल पर पाएं</p>
+        <div class="news-form">
+            <input type="email" placeholder="आपका ईमेल पता">
+            <button>सब्सक्राइब करें</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Farmer Registry</h4>
+                <p>किसान रजिस्ट्री – AgriStack सूचना पोर्टल<br>भारत सरकार की पहल</p>
+            </div>
+            <div class="footer-col">
+                <h4>महत्वपूर्ण लिंक</h4>
+                <a href="#">होम</a>
+                <a href="#">फार्मर रजिस्ट्री</a>
+                <a href="#">PM Kisan स्टेटस</a>
+                <a href="#">प्राइवेसी पॉलिसी</a>
+            </div>
+            <div class="footer-col">
+                <h4>सहायता</h4>
+                <a href="#">किसान हेल्पलाइन</a>
+                <a href="#">CSC सेंटर</a>
+                <a href="#">संपर्क करें</a>
+            </div>
+            <div class="footer-col">
+                <h4>हमसे जुड़ें</h4>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Farmer Registry – AgriStack डिजिटल किसान पहचान | सूचनात्मक पोर्टल</p>
+            <p style="margin-top: 8px;">🇮🇳 जय हिन्द – जय किसान 🇮🇳</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Search functionality
+    document.querySelector('.search-box button')?.addEventListener('click', function() {
+        let query = document.querySelector('.search-box input')?.value;
+        if(query && query.trim()) {
+            alert('खोज: ' + query + '\n\n(जल्द ही सर्च सुविधा आ रही है)');
+        }
+    });
+    
+    // Newsletter subscription
+    document.querySelector('.news-form button')?.addEventListener('click', function() {
+        let email = document.querySelector('.news-form input')?.value;
+        if(email && email.trim()) {
+            alert('धन्यवाद! ' + email + ' पर हमारी न्यूज़लेटर भेजी जाएगी।');
+            document.querySelector('.news-form input').value = '';
+        } else {
+            alert('कृपया अपना ईमेल पता दर्ज करें।');
+        }
+    });
+</script>
+
+</body>
+</html>
